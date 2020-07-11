@@ -1,3 +1,3 @@
 layout: page
 title: "Book"
-permalink: /book
+permalink: /book/
