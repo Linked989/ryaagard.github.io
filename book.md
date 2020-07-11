@@ -1,4 +1,4 @@
-## Book
+# Book
 ![Image](https://www.hackthebox.eu/storage/avatars/dac79630729cd2c675e86bcd809caf5e.png)
 
 
@@ -12,7 +12,7 @@
 
 Book was a medium linux box on HackTheBox that first involved getting the administrator user with sql truncation attack, then on the user page we can do some xss magic with pdf-s and on the administrator page we can see the output of that xss, so with that we got LFI(Local File Inclusion) and could read id_rsa file of the user. With the user we can see some logrotate commands running around with pspy and we used logrotten exploit to get root.
 
-# Nmap
+## Nmap
 
 So the first thing we do is start the nmap scan to see what open ports are there, I usually do
 ```
