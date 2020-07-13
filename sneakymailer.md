@@ -1,5 +1,5 @@
 <p align="center">
-  # SneakyMailer
+  <h1>SneakyMailer</h1>
 </p>
 
 <p align="center">
