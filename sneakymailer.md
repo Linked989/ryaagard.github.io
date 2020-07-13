@@ -118,7 +118,6 @@ client = socket(AF_INET, SOCK_STREAM)
 client.connect(mailserver)
 
 def main():
-	global i
 	with open('emails.txt', 'r') as f:
 		for email in f.readlines():
 			email = email.strip()
