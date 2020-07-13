@@ -158,7 +158,7 @@ It is obviously url encoded so when we decode it we get the password
 ```
 ^(#J@SkFv2\[%KhIxKk(Ju`hqcHl<:Ht
 ```
-and the email `paulbyrd@sneakymailer.htb`, with that we can login to port 993 using `evolution` and we can see in sent emails another set of credentials for user `developer` and the password
+We also get the email `paulbyrd@sneakymailer.htb`, with those credentials we can login to port 993 using `evolution` and we can see in 'sent emails' tab another set of credentials for user `developer` and the password
 ```
 m^AsY7vTKVT+dV1{WOU%@NaHkUAId3]C
 ```
