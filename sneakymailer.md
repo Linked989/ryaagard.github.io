@@ -81,7 +81,7 @@ And we add that line inside the /etc/hosts like so:
 127.0.1.1       parrot
 10.10.10.197    sneakycorp.htb
 
-\# The following lines are desirable for IPv6 capable hosts
+# The following lines are desirable for IPv6 capable hosts
 ::1     localhost ip6-localhost ip6-loopback
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
@@ -150,7 +150,14 @@ Content-Type: application/x-www-form-urlencoded
 
 firstName=Paul&lastName=Byrd&email=paulbyrd%40sneakymailer.htb&password=%5E%28%23J%40SkFv2%5B%25KhIxKk%28Ju%60hqcHl%3C%3AHt&rpassword=%5E%28%23J%40SkFv2%5B%25KhIxKk%28Ju%60hqcHl%3C%3AHt
 ```
-It is obviously url encoded so when we decode it we get the password ^(#J@SkFv2\[%KhIxKk(Ju\`hqcHl<:Ht and the email `paulbyrd@sneakymailer.htb`, with that we can login to port 993 using `evolution` and we can see in sent emails another set of credentials for user `developer` and the password `m^AsY7vTKVT+dV1{WOU%@NaHkUAId3]C`.
+It is obviously url encoded so when we decode it we get the password
+```
+^(#J@SkFv2\[%KhIxKk(Ju`hqcHl<:Ht
+```
+and the email `paulbyrd@sneakymailer.htb`, with that we can login to port 993 using `evolution` and we can see in sent emails another set of credentials for user `developer` and the password
+```
+m^AsY7vTKVT+dV1{WOU%@NaHkUAId3]C
+```
 
 ## FTP
 
@@ -257,5 +264,5 @@ The user wasn't hard but it could be definitely rated as medium and learned a co
 
 
 # Contact
-- Twitter: [_ryaagard_]()
+- Twitter: [_ryaagard_](https://twitter.com/ryaagard)
 - Discord: _ryaagard#5027_
