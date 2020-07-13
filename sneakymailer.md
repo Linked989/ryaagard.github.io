@@ -1,10 +1,10 @@
-# Sneaky Mailer
+<p align="center">
+  # SneakyMailer
+</p>
 
 <p align="center">
   <img src="https://www.hackthebox.eu/storage/avatars/5f5ab2f3fb31673d80623bdd98b286c3.png" />
 </p>
-
-![Image](https://www.hackthebox.eu/storage/avatars/5f5ab2f3fb31673d80623bdd98b286c3.png)
 
 - OS: _Linux_
 - Difficulty: _Medium_
