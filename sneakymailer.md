@@ -1,6 +1,7 @@
-<p align="center">
-  <h1>SneakyMailer</h1>
-</p>
+# SneakyMailer
+
+<pre>
+</pre>
 
 <p align="center">
   <img src="https://www.hackthebox.eu/storage/avatars/5f5ab2f3fb31673d80623bdd98b286c3.png" />
@@ -265,7 +266,8 @@ And just like that we get a shell as root!
 
 The user wasn't hard but it could be definitely rated as medium and learned a couple of stuff from it, root was just a piece of cake. Overall a very nice box by [_sulcud_](https://www.hackthebox.eu/home/users/profile/106709)!
 
-
+<pre>
+</pre>
 # Contact
 - Twitter: [_ryaagard_](https://twitter.com/ryaagard)
 - Discord: _ryaagard#5027_
