@@ -273,4 +273,4 @@ And just like that we get a shell as root!
 
 <pre>
 </pre>
-Tags: hackthebox, writeup, ctf, sneakymailer, walkthrough, tutorial
+Tags: hackthebox, writeup, ctf, sneakymailer, walkthrough, tutorial, htb
