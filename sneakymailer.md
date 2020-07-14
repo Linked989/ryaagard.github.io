@@ -1,4 +1,4 @@
-# SneakyMailer
+# SneakyMailer Writeup
 
 <pre>
 </pre>
