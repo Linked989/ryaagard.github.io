@@ -1,3 +1,5 @@
+<title>SneakyMailer Writeup</title>
+
 # SneakyMailer Writeup
 
 <pre>
