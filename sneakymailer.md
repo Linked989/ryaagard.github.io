@@ -262,12 +262,13 @@ sudo /usr/bin/pip3 install $TF
 ```
 And just like that we get a shell as root!
 
-## General Impression
-
-The user wasn't hard but it could be definitely rated as medium and learned a couple of stuff from it, root was just a piece of cake. Overall a very nice box by [_sulcud_](https://www.hackthebox.eu/home/users/profile/106709)!
 
 <pre>
 </pre>
 # Contact
 - Twitter: [_ryaagard_](https://twitter.com/ryaagard)
 - Discord: _ryaagard#5027_
+
+<pre>
+</pre>
+Tags: hackthebox, writeup, ctf, sneakymailer, walkthrough, tutorial
