@@ -1,6 +1,6 @@
 <title>SneakyMailer Writeup</title>
 
-# SneakyMailer Writeup
+# SneakyMailer Writeup | HackTheBox
 
 <pre>
 </pre>
