@@ -84,7 +84,7 @@ Nmap done: 1 IP address (1 host up) scanned in 323.91 seconds
 
 We see there are quite a few ports open but while trying to enumerate smb, ldap and rpc we don't get much information, so those are not needed right now. We also see that there is port 80 open so we head to the webpage. On the webpage while scrolling down we can see a couple of users listed
 
-![Image](https://i.imgur.com/h7X1Lxe.png))
+![Image](https://i.imgur.com/h7X1Lxe.png)
 
 This can be useful to us because there is kerberos port open (88) and if we guess the username we can get the kerberos hash of the user and potentially crack it. Then I wrote this list of usernames to a file called usernames.txt
 
