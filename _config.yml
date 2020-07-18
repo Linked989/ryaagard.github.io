@@ -1,1 +1,6 @@
 theme: jekyll-theme-midnight
+github:
+  is_project_page: false
+description: >-
+  Ryaagard Writeups
+url: "https://ryaagard.github.io/"
