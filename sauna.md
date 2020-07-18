@@ -297,6 +297,4 @@ And we successfully root the box!
 
 - Twitter: [_ryaagard_](https://twitter.com/ryaagard)
 - Discord: _ryaagard#5027_
-
-
-
+- HackTheBox Profile: [_ryaagard_](https://www.hackthebox.eu/home/users/profile/222411)
