@@ -7,7 +7,7 @@
     <img src="https://www.hackthebox.eu/storage/avatars/f31d5d0264fadc267e7f38a9d7729d14.png"/>
 </p>
 
-- OS: _Linux_
+- OS: _Windows_
 - Difficulty: _Easy_
 - Creator: [_egotisticalSW_](https://www.hackthebox.eu/home/users/profile/94858)
 - User blood: [_InfoSecJack_](https://www.hackthebox.eu/home/users/profile/52045)
