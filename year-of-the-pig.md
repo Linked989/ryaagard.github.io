@@ -73,9 +73,9 @@ We see that it makes a POST request to /api/login with json in the data, that js
 
 The script takes 3 arguments, the first one is the IP of the machine, then it takes the wordlist to use and then it takes the username to brute force. The script is just going through each password in the wordlist and md5 hashing it then sending a POST request to /api/login with the json data. So when we run this script with the wordlist we generated earlier we get a hit:
 
-![Image](https://i.imgur.com/UiTYbJQ.png)
+![Image](https://i.imgur.com/l5wAYn6.png)
 
-After we login we see that we can run system commands, but commands seem very limited, so there is no way I could get a reverse shell from there, and later when we look at the files we see that actually there are just 5/6 certain commands we can run and that's it, so we can try SSH with the credentials we right now have which are `marco:savoia21!`.
+After we login we see that we can run system commands, but commands seem very limited, so there is no way I could get a reverse shell from there, and later when we look at the files we see that actually there are just 5/6 certain commands we can run and that's it, so we can try SSH with the credentials we right now have.
 
 ![Image](https://i.imgur.com/bimDPAD.png)
 
@@ -101,13 +101,13 @@ After running that command we wrote a file called `ryaagard.php` inside the /var
 
 So now we can read the `admin.db` file we found, I transfer it to my machine in the following screenshot and then open it in sqlite3:
 
-![Image](https://i.imgur.com/ftWC7cr.png)
+![Image](https://i.imgur.com/YXisVTD.png)
 
 We can see there is a hash for curtis user, or there is 2 for some reason, anyways we take both to crackstation and 1 of those hashes gives us a clear-text password.
 
-![Image](https://i.imgur.com/msxREM1.png)
+![Image](https://i.imgur.com/sORPMx8.png)
 
-And the new credentials we found are `curtis:Donald1983$`, with those we can run `su - curtis` on `marco` SSH session to get to `curtis` user.
+And the new credentials we found are `curtis:[REDACTED]`, with those we can run `su - curtis` on `marco` SSH session to get to `curtis` user.
 
 As user `curtis` we run `sudo -l` and we get the following output:
 
@@ -133,7 +133,7 @@ sudoedit /var/www/html/temp/temp/config.php
 
 And we see the contents of /etc/shadow!
 
-![Image](https://i.imgur.com/m0ZupYe.png)
+![Image](https://i.imgur.com/safRG77.png)
 
 To get root user I run to following commands:
 
