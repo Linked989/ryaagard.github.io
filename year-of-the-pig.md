@@ -14,7 +14,7 @@
 <pre>
 </pre>
 
-Year of the Pig is rated as a hard linux machine but I think it definitely could have been rated medium, anyways first step needed some custom wordlist generation and a custom script to brute force the password of the user then some basic linux privilege escalation that we are gonna get into.
+Year of the Pig is rated as a hard linux machine. First step needed some custom wordlist generation and a custom script to brute force the password of the user then some basic linux privilege escalation that we are gonna get into.
 
 
 
@@ -42,10 +42,6 @@ It says `Remember that passwords should be a memorable word, followed by two num
 
 ```
 {Memorable Word}{2 Numbers}{A special character} # For an example Marco99!
-```
-
-```
-
 ```
 
 We can easily just guess the special character and the 2 numbers as the numbers go from 00 to 100, but we need a memorable word, and if we remember from earlier, Marco loves planes and talks about them a lot on the main page, so lets get some words from the page.
@@ -122,7 +118,7 @@ We can run `sudoedit /var/www/html/*/*/config.php` as any user on the box. But a
 cd /var/www/html/ && mkdir -p temp/temp
 ```
 
-To create the 2 directories. After that we think of what can we actually do with this sudoedit as root, and I remembered symbolic links. Basically we create a symbolic link called `config.php` inside /var/www/html/temp/temp/ and link it towards /etc/shadow, and we can do that by running the following command as `marco` user:
+to create the 2 directories. After that we think of what can we actually do with this sudoedit as root, and I remembered symbolic links. Basically we create a symbolic link called `config.php` inside /var/www/html/temp/temp/ and link it to /etc/shadow, and we can do that by running the following command as `marco` user:
 
 ```
 ln -s /etc/shadow /var/www/html/temp/temp/config.php
