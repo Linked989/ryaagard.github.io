@@ -10,7 +10,7 @@
 - OS: _Linux_
 - Difficulty: _Hard_
 - Creator: [_MuirlandOracle_](https://tryhackme.com/p/MuirlandOracle)
-- TryHackMe: https://tryhackme.com/
+- TryHackMe: [https://tryhackme.com](https://tryhackme.com/)
 
 <pre>
 </pre>
